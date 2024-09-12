@@ -1,0 +1,34 @@
+π§ββοΈ This is a binary font file. I cannot generate or modify binary font files directly. However, I can provide you with instructions on how to include and use this font file in your project.
+
+To include the Inter Bold font in your project, you'll need to download the Inter Bold font file (inter-bold.ttf) from a trusted source, such as the official Google Fonts repository (https://fonts.google.com/specimen/Inter).
+
+After downloading the font file, place it in the `public/fonts/` directory of your project. Then, you can import and use this font in your CSS or Tailwind CSS configuration.
+
+For example, in your `tailwind.config.js` file, you can add the following configuration to include the Inter Bold font:
+
+```js
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        'inter-bold': ['Inter-Bold', 'sans-serif'],
+      },
+    },
+  },
+}
+```
+
+Now, you can use the `inter-bold` font family in your Tailwind CSS utilities or CSS files:
+
+```html
+<p class="font-inter-bold">This text will use the Inter Bold font</p>
+```
+
+```css
+.custom-class {
+  font-family: 'Inter-Bold', sans-serif;
+}
+```
+
+Make sure to adjust the font file paths and font family names according to your project structure and requirements.
